@@ -1,0 +1,91 @@
+#r0:checked ~ .all-circles {
+    animation: rotate0 0.5s 2 linear alternate;
+}
+
+@keyframes rotate0 {
+    to {
+        transform: rotate(-30deg);
+    }
+}
+#r9:checked ~ .all-circles {
+    animation: rotate9 0.5s 2 linear alternate;
+}
+
+@keyframes rotate9 {
+    to {
+        transform: rotate(-50deg);
+    }
+}
+#r8:checked ~ .all-circles {
+    animation: rotate8 1s 2 linear alternate;
+}
+
+@keyframes rotate8 {
+    to {
+        transform: rotate(-70deg);
+    }
+}
+
+#r7:checked ~ .all-circles {
+    animation: rotate7 1s 2 linear alternate;
+}
+
+@keyframes rotate7 {
+    to {
+        transform: rotate(-90deg);
+    }
+}
+#r6:checked ~ .all-circles {
+    animation: rotate6 1.5s 2 linear alternate;
+}
+
+@keyframes rotate6 {
+    to {
+        transform: rotate(-110deg);
+    }
+}
+#r5:checked ~ .all-circles {
+    animation: rotate5 1.5s 2 linear alternate;
+}
+
+@keyframes rotate5 {
+    to {
+        transform: rotate(-130deg);
+    }
+}
+#r4:checked ~ .all-circles {
+    animation: rotate4 2s 2 linear alternate;
+}
+
+@keyframes rotate4 {
+    to {
+        transform: rotate(-150deg);
+    }
+}
+#r3:checked ~ .all-circles {
+    animation: rotate3 2s 2 linear alternate;
+}
+
+@keyframes rotate3 {
+    to {
+        transform: rotate(-170deg);
+    }
+}
+#r2:checked ~ .all-circles {
+    animation: rotate2 2.5s 2 linear alternate;
+}
+
+@keyframes rotate2 {
+    to {
+        transform: rotate(-190deg);
+    }
+}
+#r1:checked ~ .all-circles {
+    animation: rotate1 2.5s 2 linear alternate;
+}
+
+@keyframes rotate1 {
+    to {
+        transform: rotate(-210deg);
+    }
+}

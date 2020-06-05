@@ -1,0 +1,31 @@
+image: registry.gitlab.com/yandex-courses/frontend/internal/software/viserion:1.1.0
+
+stages:
+  - install
+  - lint
+  - test
+
+install:
+  stage: install
+  script:
+    - npm ci
+  artifacts:
+    paths:
+      - node_modules/
+
+lint:
+  stage: lint
+  dependencies:
+    - install
+  script:
+    - npm run lint
+
+test:
+  stage: test
+  services:
+    - name: registry.gitlab.com/yandex-courses/frontend/internal/software/essos:1.0.0
+      alias: postgres
+  dependencies:
+    - install
+  script:
+    - npm test

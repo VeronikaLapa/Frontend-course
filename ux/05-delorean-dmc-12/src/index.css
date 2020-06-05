@@ -1,0 +1,136 @@
+.newspaper {
+  width: 1100px;
+
+  margin: auto;
+
+  background: rgba(240, 196, 26, 0.29);
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paper-name {
+  margin: auto;
+
+  font-family: 'Bungee Shade', cursive;
+  font-size: 45px;
+}
+.date {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 4px 0;
+
+  border-top: 7px double gray;
+  border-bottom: 7px double gray;
+
+  text-align: center;
+}
+.article {
+  display: grid;
+  grid-gap: 15px;
+  grid-template:
+    '. left center right by'
+    /10px 2fr 2fr 1fr 10px;
+
+  padding: 10px;
+
+  block-size: border-box;
+  text-align: justify;
+}
+.article__left {
+  grid-area: left;
+
+  column-count: 2;
+}
+.article__right {
+  grid-area: right;
+}
+
+.article__center {
+  grid-area: center;
+
+  column-count: 2;
+}
+.title {
+  margin-top: 0.5em;
+
+  column-span: all;
+  font-family: 'Rakkas', cursive;
+  font-size: 30px;
+}
+.small-title {
+  margin: 30px 0;
+
+  font-family: 'Neuton', serif;
+}
+.image {
+  width: 100%;
+  margin: 10px 0;
+
+  column-span: all;
+}
+.image__comment {
+  margin-top: 3px;
+
+  font-family: 'Josefin Slab', serif;
+  font-size: 14px;
+}
+.image img {
+  width: 100%;
+}
+.quote {
+  margin: 15px 0;
+
+  column-span: all;
+  font-family: 'Niconne', cursive;
+  font-size: 20px;
+}
+h2 {
+  font-family: 'Quattrocento', serif;
+}
+p {
+  margin: 0;
+
+  font-family: 'Neuton', serif;
+  text-indent: 20px;
+
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+}
+.first-p:first-letter {
+  font-family: 'Rakkas', cursive;
+  font-size: 40px;
+}
+.first-p:first-line {
+  line-height: 20px;
+}
+.first-p {
+  margin-top: 0;
+
+  font-size: 17px;
+}
+p:first-line {
+  margin-left: 10px;
+}
+
+.info {
+  grid-area: by;
+
+  font-size: 13px;
+  text-align: end;
+  writing-mode: vertical-rl;
+}
+.theme-black:checked ~ .newspaper {
+  background: black;
+  color: white;
+}
+
+.size-big:checked ~ .newspaper .text{
+  font-size: 25px;
+}
+.size-big:checked ~ .newspaper {
+
+}

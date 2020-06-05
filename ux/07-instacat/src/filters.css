@@ -1,0 +1,91 @@
+input[name='filter'] {
+  display: none;
+}
+input[name='list'] {
+  display: none;
+}
+.filter__bw {
+  filter: grayscale(1);
+}
+.filter__sepia {
+  filter: sepia(1);
+}
+.filter__contrast {
+  filter: contrast(2);
+}
+.filter__invert {
+  filter: invert(1);
+}
+.filter__saturate {
+  filter: saturate(4);
+}
+.bw-filter:checked ~ .main-window .img {
+  filter: grayscale(1);
+}
+
+.sepia-filter:checked ~ .main-window .img {
+  filter: sepia(1);
+}
+.contrast-filter:checked ~ .main-window .img {
+  filter: contrast(2);
+}
+.invert-filter:checked ~ .main-window .img {
+  filter: invert(1);
+}
+.saturate-filter:checked ~ .main-window .img {
+  filter: saturate(4);
+}
+.arrow {
+  margin: 5px;
+}
+
+.r-arrow-s1 {
+  fill: darkgray;
+}
+.l-arrow-s3 {
+  fill: darkgray;
+}
+
+.right_arrow__img {
+  display: none;
+
+  cursor: pointer;
+  fill: gray;
+}
+
+.left_arrow__img {
+  display: none;
+
+  cursor: pointer;
+  fill: gray;
+}
+
+.state1:checked ~ .filters .r-arrow-s2 {
+  display: block;
+}
+.state2:checked ~ .filters .r-arrow-s3 {
+  display: block;
+}
+.state3:checked ~ .filters .r-arrow-s1 {
+  display: block;
+}
+
+.state1:checked ~ .filters .l-arrow-s3 {
+  display: block;
+}
+.state2:checked ~ .filters .l-arrow-s1 {
+  display: block;
+}
+.state3:checked ~ .filters .l-arrow-s2 {
+  display: block;
+}
+
+.filters__list {
+  transition-duration: 1s;
+}
+.state2:checked ~ .filters .filters__list {
+  transform: translateX(-180px);
+}
+.state3:checked ~ .filters .filters__list {
+  transform: translateX(-360px);
+}

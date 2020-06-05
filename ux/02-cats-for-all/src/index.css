@@ -1,0 +1,18 @@
+@media screen and (min-width: 1200px) {
+  body {
+    display: grid;
+    grid-template:
+      'header  header' 100px
+      'content sidebar' 1fr
+      'footer  footer' 100px
+      / 300px 1fr;
+  }
+  .middle {
+    grid-area: content;
+  }
+
+  .sidebar {
+    display: block;
+    grid-area: sidebar;
+  }
+}

@@ -1,0 +1,107 @@
+input {
+  display: none;
+}
+.all-numbers {
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  background: #8a8a8a;
+  margin: 100px 100px;
+  position: relative;
+}
+
+.number {
+  font-size: 45px;
+  position: absolute;
+  top: 175px;
+  left: 175px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  z-index: 2;
+}
+.number-circle {
+  position: absolute;
+  top: 175px;
+  left: 175px;
+  border-radius: 50%;
+  background: #b5b5b5;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+
+.all-circles {
+  height: 400px;
+  width: 400px;
+}
+.stop {
+  background: black;
+  height: 60px;
+  width: 15px;
+  position: absolute;
+  top: 175px;
+  left: 175px;
+  transform: rotate(-43deg)translateY(160px);
+}
+#number0 {
+  transform: translateY(160px) rotate(0);
+}
+#number9 {
+  transform: rotate(20deg) translateY(160px) rotate(-20deg);
+}
+#number8 {
+  transform: rotate(40deg) translateY(160px) rotate(-40deg);
+}
+#number7 {
+  transform: rotate(60deg) translateY(160px) rotate(-60deg);
+}
+#number6 {
+  transform: rotate(80deg) translateY(160px) rotate(-80deg);
+}
+#number5 {
+  transform: rotate(100deg) translateY(160px) rotate(-100deg);
+}
+#number4 {
+  transform: rotate(120deg) translateY(160px) rotate(-120deg);
+}
+#number3 {
+  transform: rotate(140deg) translateY(160px) rotate(-140deg);
+}
+#number2 {
+  transform: rotate(160deg) translateY(160px) rotate(-160deg);
+}
+#number1 {
+  transform: rotate(180deg) translateY(160px) rotate(-180deg);
+}
+
+#nc0 {
+  transform: translateY(160px);
+}
+#nc9 {
+  transform: rotate(20deg) translateY(160px);
+}
+#nc8 {
+  transform: rotate(40deg) translateY(160px);
+}
+#nc7 {
+  transform: rotate(60deg) translateY(160px);
+}
+#nc6 {
+  transform: rotate(80deg) translateY(160px);
+}
+#nc5 {
+  transform: rotate(100deg) translateY(160px);
+}
+#nc4 {
+  transform: rotate(120deg) translateY(160px);
+}
+#nc3 {
+  transform: rotate(140deg) translateY(160px);
+}
+#nc2 {
+  transform: rotate(160deg) translateY(160px);
+}
+#nc1 {
+  transform: rotate(180deg) translateY(160px);
+}

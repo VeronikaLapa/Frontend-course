@@ -1,0 +1,103 @@
+.moon__box {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 60px);
+
+  width: 120px;
+  height: 120px;
+
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-name: moon__frames;
+  animation-timing-function: ease-in;
+}
+
+@keyframes moon__frames {
+  0% {
+    transform: scale(1.4) translateX(-450px);
+  }
+  40%,
+  60% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale(1.4) translateX(450px);
+  }
+}
+
+.moon {
+  animation: yAxis 15s infinite ease-out;
+}
+
+@keyframes yAxis {
+  from {
+    animation-timing-function: ease-out;
+    transform: translateY(400px);
+  }
+  40%,
+  60% {
+    animation-timing-function: ease-in;
+    transform: translateY(0);
+  }
+  to {
+    animation-timing-function: ease-in;
+    transform: translateY(400px);
+  }
+}
+
+.cloud {
+  animation: cloud-1 30s infinite linear;
+  transform: translateX(-100%) translateZ(50px) scale(0.5);
+}
+.cloud-2 {
+  top: 80px;
+
+  animation: cloud-2 22s infinite linear 2s;
+  transform: translateX(-100%) translateZ(70px) scale(0.7);
+}
+.cloud-3 {
+  top: 150px;
+
+  animation: cloud-3 28s infinite linear 3s;
+  transform: translateX(-100%) translateZ(80px) scale(0.8);
+}
+.cloud-4 {
+  top: 115px;
+
+  animation: cloud-4 13s infinite linear 4s;
+  transform: translateX(-100%) translateZ(100px) scale(1);
+}
+@keyframes cloud-1 {
+  from {
+    transform: translateX(-100%) translateZ(50px) scale(0.5);
+  }
+  to {
+    transform: translateX(600%) translateZ(50px) scale(0.5);
+  }
+}
+@keyframes cloud-2 {
+  from {
+    transform: translateX(-100%) translateZ(70px) scale(0.7);
+  }
+  to {
+    transform: translateX(600%) translateZ(70px) scale(0.7);
+  }
+}
+@keyframes cloud-3 {
+  from {
+    transform: translateX(-100%) translateZ(80px) scale(0.8);
+  }
+  to {
+    transform: translateX(600%) translateZ(80px) scale(0.8);
+  }
+}
+@keyframes cloud-4 {
+  from {
+    transform: translateX(-100%) translateZ(100px) scale(1);
+  }
+  to {
+    transform: translateX(600%) translateZ(100px) scale(1);
+  }
+}

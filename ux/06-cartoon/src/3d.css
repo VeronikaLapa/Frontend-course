@@ -1,0 +1,147 @@
+.left {
+  position: absolute;
+  top: 0;
+  z-index: 600;
+
+  width: 30%;
+  height: 100%;
+}
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 600;
+
+  width: 30%;
+  height: 100%;
+}
+.top {
+  position: absolute;
+  top: 0;
+  z-index: 600;
+
+  width: 100%;
+  height: 30%;
+}
+.bottom {
+  position: absolute;
+  top: 60%;
+  z-index: 600;
+
+  width: 100%;
+  height: 30%;
+}
+.canvas {
+  transition: transform linear 2s;
+  perspective: 1000px;
+
+  transform-style: preserve-3d;
+}
+
+.center {
+  perspective: 1000px;
+}
+
+.bridge {
+  width: 110%;
+
+  transition: transform linear 2s;
+  transform-origin: top center;
+  z-index: 10;
+}
+.h-con {
+  transition: transform linear 2s;
+}
+.train__box {
+  position: absolute;
+  right: 0;
+  bottom: 12.6rem;
+  z-index: 10;
+
+  width: 44rem;
+  height: 10rem;
+
+  transition: transform linear 2s;
+  transform-origin: bottom center;
+}
+.train {
+  position: initial;
+  z-index: 10;
+}
+
+.cloud__box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 200px;
+  height: 60px;
+
+  transition: transform linear 2s;
+}
+.cloud {
+  z-index: 10;
+}
+
+.left:hover ~ .canvas {
+  transform: rotateY(10deg);
+}
+.left:hover ~ .canvas .train__box {
+  transform: rotateY(10deg) translateZ(250px);
+}
+.left:hover ~ .canvas .bridge {
+  transform: rotateY(10deg) translateZ(250px);
+}
+.left:hover ~ .canvas .h-con {
+  transform: rotateY(10deg) translateZ(50px);
+}
+.left:hover ~ .canvas .cloud__box {
+  transform: rotateY(10deg);
+}
+.right:hover ~ .canvas .h-con {
+  transform: rotateY(-10deg) translateZ(50px);
+}
+.right:hover ~ .canvas {
+  transform: rotateY(-10deg);
+}
+.right:hover ~ .canvas .train__box {
+  transform: rotateY(-10deg) translateZ(250px);
+}
+.right:hover ~ .canvas .bridge {
+  transform: rotateY(-10deg) translateZ(250px);
+}
+.right:hover ~ .canvas .cloud__box {
+  transform: rotateY(-10deg);
+}
+.top:hover ~ .canvas .h-con {
+  transform: rotateX(-15deg) translateZ(50px);
+}
+.top:hover ~ .canvas {
+  transform: rotateX(-10deg);
+}
+.top:hover ~ .canvas .train__box {
+  transform: rotateX(-10deg) translateZ(250px);
+}
+.top:hover ~ .canvas .bridge {
+  transform: rotateX(-10deg) translateZ(250px);
+}
+.top:hover ~ .canvas .cloud__box {
+  transform: rotateX(-10deg);
+}
+
+.bottom:hover ~ .canvas .h-con {
+  transform: rotateX(10deg) translateZ(50px);
+}
+.bottom:hover ~ .canvas {
+  transform: rotateX(10deg);
+}
+.bottom:hover ~ .canvas .train__box {
+  transform: rotateX(10deg) translateZ(250px);
+}
+.bottom:hover ~ .canvas .bridge {
+  transform: rotateX(10deg) translateZ(250px);
+}
+.bottom:hover ~ .canvas .cloud__box {
+  transform: rotateX(10deg);
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>03-pimp-your-cat</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="page">
+    <form class="form page__form">
+      <div class="form__close">
+        <input type="radio" id="close_form" name="close-radio"/>
+        <label for="close_form"><img src="img/cross.png" alt="cross"/></label>
+      </div>
+      <div class="form__images">
+        <img src="img/mops1.png" alt="dog before"/>
+        <img class="arrow" src="img/стрелка-png-1.png" alt="arrow"/>
+        <img src="img/mops2.png" alt="dog after"/>
+      </div>
+      <div class="form__content">
+        <div class="form__title">
+          Обучи друга!
+        </div>
+        <div class="form__subtitle">
+          Запишись на курсы дрессуры уже сегодня и приходи на занятия, а также получай еженедельные
+          видеоуроки от опытных кинологов
+        </div>
+
+        <div class="input-text input__email">
+          <input type="email" placeholder="Ваш email" />
+          <div class="input-checkbox">
+            <label class="checkbox-container" for="spam">
+              <input type="checkbox" id="spam"/>
+              <span class="checkmark"></span>
+              Хочу рассылку с видеоуроками
+            </label>
+          </div>
+        </div>
+        <div class="input__info">
+          <div class="input__block">
+            <div class="input-number">
+              <label for="age">
+                Возраст
+                <input type="number" id="age" min="0" max="15"/>
+              </label>
+            </div>
+            <div class="input-number">
+              <label for="weight">
+                Вес
+                <input type="number" id="weight" min="1" max="40"/>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="input-radio input__choose-type">
+          <div class="input-radio__title">
+            Выберите программу занятий
+          </div>
+          <div class="input-radio__buttons input__block">
+            <input type="radio" name="course" checked="checked" id="#1" />
+            <label class="input-radio__button" for="#1">ОКД</label>
+            <input type="radio" name="course" id="#2" />
+            <label class="input-radio__button" for="#2">ЗКС</label>
+            <input type="radio" name="course" id="#3" />
+            <label class="input-radio__button" for="#3">Коррекция поведения</label>
+            <input type="radio" name="course" id="#4" />
+            <label class="input-radio__button" for="#4">Другое</label>
+          </div>
+        </div>
+        <button class="submit-button form__submit-button">
+          <div class="submit-button__text">
+            Записаться
+          </div>
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

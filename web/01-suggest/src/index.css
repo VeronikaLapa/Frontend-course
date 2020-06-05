@@ -1,0 +1,58 @@
+body {
+  display: flex;
+
+  font-family: Arial, sans-serif;
+}
+.form {
+  margin: 100px auto;
+}
+.autocomplete {
+  position: relative;
+
+  display: inline-block;
+
+  width: 500px;
+}
+.suggests {
+  position: absolute;
+
+  top: 100%;
+  right: 0;
+  left: 0;
+
+  box-sizing: border-box;
+}
+.line {
+  overflow: hidden;
+
+  height: 35px;
+  padding: 8px;
+
+  border: 1px solid gray;
+
+  cursor: pointer;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.line:hover {
+  border: 2px solid #7c95cb;
+}
+.found {
+  font-weight: bold;
+}
+.line_checked {
+  background-color: #cbdfdf;
+}
+.submit {
+  padding: 12px;
+
+  border: none;
+
+  background-color: #555dcb;
+  color: white;
+}
+.search-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+}

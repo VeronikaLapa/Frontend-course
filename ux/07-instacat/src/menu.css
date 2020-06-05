@@ -1,0 +1,108 @@
+input[name='size'] {
+  display: none;
+}
+input[name='flip'] {
+  display: none;
+}
+input[name='rotate'] {
+  display: none;
+}
+input[name='fill'] {
+  display: none;
+}
+input[name='orig'] {
+  display: none;
+}
+.button__size {
+  display: none;
+}
+.img {
+  transition-duration: 1.5s;
+  transform: rotateY(0);
+}
+.picture {
+  overflow: hidden;
+
+  transition-duration: 1.5s;
+  transform: rotate(0deg);
+}
+.size1:checked ~ .menu .button__size2 {
+  display: block;
+}
+.size2:checked ~ .menu .button__size3 {
+  display: block;
+}
+.size3:checked ~ .menu .button__size1 {
+  display: block;
+}
+.button__rotate {
+  display: none;
+}
+.rotate0:checked ~ .menu .button__rotate90 {
+  display: block;
+}
+.rotate90:checked ~ .menu .button__rotate180 {
+  display: block;
+}
+.rotate180:checked ~ .menu .button__rotate270 {
+  display: block;
+}
+.rotate270:checked ~ .menu .button__rotate0 {
+  display: block;
+}
+
+.rotate0:checked ~ .main-window .picture {
+  transition-duration: 1.5s;
+  transform: rotate(0deg);
+}
+.rotate90:checked ~ .main-window .picture {
+  transition-duration: 1.5s;
+  transform: rotate(90deg);
+}
+.rotate180:checked ~ .main-window .picture {
+  transition-duration: 1.5s;
+  transform: rotate(180deg);
+}
+.rotate270:checked ~ .main-window .picture {
+  transition-duration: 1.5s;
+  transform: rotate(270deg);
+}
+
+.size1:checked ~ .main-window .picture-box {
+  transition-duration: 1s;
+  transform: scale(1);
+}
+.size2:checked ~ .main-window .picture-box {
+  transition-duration: 1s;
+  transform: scale(1.2);
+}
+.size3:checked ~ .main-window .picture-box {
+  transition-duration: 1s;
+  transform: scale(0.8);
+}
+
+.flip:checked ~ .main-window .img {
+  transition-duration: 1.5s;
+  transform: rotateY(180deg);
+}
+
+.fill:checked ~ .main-window .img {
+  object-fit: cover;
+}
+
+.orig:checked ~ .main-window .img {
+  transform: none;
+
+  filter: none;
+
+  object-fit: contain;
+}
+.orig:checked ~ .main-window .picture-box {
+  transform: none;
+}
+.orig:checked ~ .main-window .picture {
+  transform: none;
+}
+.orig:checked ~ .menu .button__orig {
+  box-shadow: 0 0 10px #aa3562;
+}

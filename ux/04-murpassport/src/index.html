@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>04-murpassport</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo header__logo">Мурпаспорт</div>
+
+    </header>
+    <nav class="navigation">
+      <div class="navigation__content">
+        <h2 class="navigation__title title">Меню</h2>
+        <ul class="navigation__links">
+          <li class="navigation__item">
+            <a href="#info" class="navigation__link">
+              <div class="link__text">Данные</div>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#med" class="navigation__link">
+              <div class="link__text">Прививки</div>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#prizes" class="navigation__link">
+              <div class="link__text">Титулы</div>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#photos" class="navigation__link">
+              <div class="link__text">Галерея</div>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#form" class="navigation__link">
+              <div class="link__text">Контакты</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="center">
+      <section id="info" class="center__block">
+        <h1 class="block__title title">Данные</h1>
+        <div class="block__content">
+          <img alt="аватар кота" class="info__photo" src="img/photo3.jpg">
+          <div class="info__data">
+            <p>Имя: Bright Bravo Boy</p>
+            <p>Кличка: Брюс</p>
+            <p>Порода: Шотландская вислоухая</p>
+            <p>Дата рождения: 3.01.2017</p>
+          </div>
+        </div>
+      </section>
+      <section id="med" class="center__block">
+        <h1 class="block__title title">Прививки</h1>
+        <div class="block__content">
+          <ol class="med__list">
+            <li>Прививка от нелюбви обнимашек</li>
+            <li>Прививка от царапанья мебели</li>
+          </ol>
+        </div>
+      </section>
+      <section id="prizes" class="center__block">
+        <h1 class="block__title title">Титулы</h1>
+        <ol class="prizes__list">
+          <li>Победитель пылесоса</li>
+          <li>Повелитель потерянных носков</li>
+          <li>Самый быстрый исполнитель тыгыдык</li>
+        </ol>
+      </section>
+      <section id="photos" class="center__block">
+        <h1 class="block__title title">Галерея</h1>
+        <div class="photos__content">
+          <div class="photos__image"><img alt="фото кота" src="img/photo1.jpg"></div>
+          <div class="photos__image"><img alt="фото кота" src="img/photo2.jpg"></div>
+          <div class="photos__image"><img alt="фото кота" src="img/photo3.jpg"></div>
+        </div>
+      </section>
+      <section id="form" class="center__block">
+        <h1 class="block__title title">Обратная связь</h1>
+        <div class="block__content">
+          <form class="form">
+            <section class="form__block">
+              <h3 class="title form-field__title"><label for="text">Комментарий</label></h3>
+              <textarea id="text"
+                        class="form__text"
+                        placeholder="Оставте свой отзыв или комменатрий">
+              </textarea>
+            </section>
+            <section class="form__block">
+              <h3 class="title form-field__title"><label for="email">Email</label></h3>
+              <input type="email" id="email" class="form__email" placeholder="Ваш email">
+            </section>
+            <input type="submit" class="form__submit">
+          </form>
+        </div>
+      </section>
+    </div>
+    <script type="text/javascript" src="./simulation.js"></script>
+    <footer class="footer">
+      <div class="footer__contacts">
+        email:
+        <div class="mail">
+          <a href="">Lapshina.nika@yandex.ru</a>
+        </div>
+      </div>
+      <div class="organization">
+        ООО "<a href="">Мурпаспорт</a>"
+      </div>
+    </footer>
+  </body>
+</html>

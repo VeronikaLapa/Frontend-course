@@ -1,0 +1,68 @@
+.canvas {
+  animation: day-night 30s linear infinite;
+
+  background: initial;
+}
+@keyframes day-night {
+  0% {
+    background-color: #eda0ff;
+  }
+  15%,
+  35% {
+    background-color: #00044e;
+  }
+  50% {
+    background-color: #eda0ff;
+  }
+  65%,
+  85% {
+    background-color: #5ed3ff;
+  }
+  100% {
+    background-color: #eda0ff;
+  }
+}
+.hill {
+  animation: day-night-hill 30s linear infinite;
+
+  background: initial;
+}
+
+@keyframes day-night-hill {
+  0% {
+    background-color: #40545c;
+  }
+  15%,
+  35% {
+    background-color: #002142;
+  }
+  65%,
+  85% {
+    background-color: #6e6e6e;
+  }
+  100% {
+    background-color: #40545c;
+  }
+}
+
+.engine-body::after {
+  animation: day-night-window 30s linear infinite;
+
+  background: initial;
+}
+@keyframes day-night-window {
+  0% {
+    background-color: #9ab099;
+  }
+  15%,
+  35% {
+    background-color: #ebde8a;
+  }
+  65%,
+  85% {
+    background-color: #87ceeb;
+  }
+  100% {
+    background-color: #9ab099;
+  }
+}

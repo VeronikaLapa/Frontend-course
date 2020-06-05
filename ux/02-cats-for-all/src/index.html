@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>02-cats-for-all</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" href="./tablet.css">
+    <link rel="stylesheet" href="./desktop.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        Стаффишоп
+      </div>
+    </header>
+    <input type="radio" name="color" id="Black">
+    <input type="radio" name="color" id="Red">
+    <input type="radio" name="color" id="White">
+    <input type="radio" name="color" id="Tiger">
+    <input type="radio" name="color" id="No" checked>
+    <div class="sidebar">
+      <div class="age_filter">
+        <div class="title">Возраст</div>
+        <input type="range" min="1" max="10" value="3" class="slider">
+        <div class="range">До 3 лет</div>
+      </div>
+      <div class="color_filter">
+        <div class="title">Цвет</div>
+        <label for="Black" class="var">
+          Черный
+        </label>
+        <label for="Red" class="var">
+          Рыжий
+        </label>
+        <label for="White" class="var">
+          Белый
+        </label>
+        <label for="Tiger" class="var">
+          Тигровый
+        </label>
+        <label for="No" class="var">
+          Любой
+        </label>
+      </div>
+
+    </div>
+    <div class="middle">
+      <div class="card red">
+
+        <div class="picture">
+          <img src="images/Staffie1.jpg" alt="staffie">
+        </div>
+        <section class="info">
+          <div class="name">
+            <a href="">Чарли</a>
+          </div>
+          <div class="short_desc">
+            <p>Возраст: 3 года</p>
+            <p>Окрас: рыжий</p>
+            <p>Болезни: нет</p>
+            <br>
+            <br>
+            <br>
+            <div class="status">Статус: ищет хозяина</div>
+          </div>
+        </section>
+
+        <div class="full_desc">
+          <p>Серьезный, молчаливый, отличный защитник и нянька</p>
+        </div>
+      </div>
+      <div class="card tiger">
+        <div class="picture">
+          <img src="images/Staffie2.jpg" alt="staffie">
+        </div>
+        <div class="info">
+          <div class="name">
+            <a href="">Мася</a>
+          </div>
+          <div class="short_desc">
+            <p>Возраст: 2 года</p>
+            <p>Окрас: черный тигровый</p>
+            <p>Болезни: нет</p>
+            <div class="status">Статус: ищет хозяина</div>
+
+          </div>
+        </div>
+
+        <div class="full_desc">
+          <p>Добрый, заводной, обажает играть с другими</p>
+        </div>
+      </div>
+      <div class="card black white">
+        <div class="picture">
+          <img src="images/Staffie3.jpg" alt="staffie">
+        </div>
+        <div class="info">
+          <div class="name">
+            <a href="">Грызли</a>
+          </div>
+          <div class="short_desc">
+            <p>Возраст: 10 месяцев</p>
+            <p>Окрас: черный с белым</p>
+            <p>Болезни: нет</p>
+            <div class="status">Статус: ищет хозяина</div>
+          </div>
+        </div>
+
+        <div class="full_desc">
+          <p>Разве собака с таким именем может быть плохим другом? Очевидно, нет!</p>
+        </div>
+
+      </div>
+      <div class="card white">
+        <div class="picture">
+          <img src="images/Staffie4.jpg" alt="staffie">
+        </div>
+        <div class="info">
+          <div class="name">
+            <a href="">Снеж</a>
+          </div>
+          <div class="short_desc">
+            <p>Возраст: 2.5 года</p>
+            <p>Окрас: белый</p>
+            <p>Болезни: нет</p>
+            <div class="status">Статус: ищет хозяина</div>
+          </div>
+        </div>
+
+        <div class="full_desc">
+          <p>Кусочек зимнего сугроба у вас дома!</p>
+        </div>
+      </div>
+      <div class="card black">
+        <div class="picture">
+          <img src="images/Staffie5.jpg" alt="staffie">
+        </div>
+        <div class="info">
+          <div class="name">
+            <a href="">Куськин</a>
+          </div>
+          <div class="short_desc">
+            <p>Возраст: 2 год</p>
+            <p>Окрас: черный</p>
+            <p>Болезни: нет</p>
+            <div class="status">Статус: ищет хозяина</div>
+          </div>
+        </div>
+
+        <div class="full_desc">
+          <p>Добрейший ребенок, которому невозможно отказать.</p>
+          <p>Только посмотрите в эти глазки...</p>
+        </div>
+      </div>
+      <div class="card black white">
+        <div class="picture">
+          <img src="images/Staffie6.jpg" alt="staffie">
+        </div>
+        <div class="info">
+          <div class="name">
+            <a href="">Груня</a>
+          </div>
+          <div class="short_desc">
+            <p>Возраст: 5 лет</p>
+            <p>Окрас: черный пятнистый</p>
+            <p>Болезни: нет</p>
+            <div class="status">Статус: ищет хозяина</div>
+          </div>
+        </div>
+
+        <div class="full_desc">
+          <p>Просто хороший друг</p>
+        </div>
+      </div>
+      <div class="card black">
+        <div class="picture">
+          <img src="images/Staffie7.jpg" alt="staffie">
+        </div>
+        <div class="info">
+          <div class="name">
+            <a href="">Джокер</a>
+          </div>
+          <div class="short_desc">
+            <p>Возраст: 1 год</p>
+            <p>Окрас: серебристый</p>
+            <p>Болезни: нет</p>
+            <div class="status">Статус: ищет хозяина</div>
+          </div>
+        </div>
+
+        <div class="full_desc">
+          <p>Улыбка на первый взгляд немного устрашающая, но она идет от души!</p>
+        </div>
+      </div>
+      <div class="card black">
+        <div class="picture">
+          <img src="images/Staffie8.jpg" alt="staffie">
+        </div>
+        <div class="info">
+          <div class="name">
+            <a href="">Манька</a>
+          </div>
+          <div class="short_desc">
+            <p>Возраст: 3 года</p>
+            <p>Окрас: серый</p>
+            <p>Болезни: нет</p>
+            <div class="status">Статус: ищет хозяина</div>
+          </div>
+        </div>
+
+        <div class="full_desc">
+          <p>Просто умница и красавица...</p>
+        </div>
+      </div>
+      <div class="card black">
+        <div class="picture">
+          <img src="images/Staffie9.jpg" alt="staffie">
+        </div>
+        <div class="info">
+          <div class="name">
+            <a href="">Круся</a>
+          </div>
+          <div class="short_desc">
+            <p>Возраст: 3 года</p>
+            <p>Окрас: кремовый</p>
+            <p>Болезни: нет</p>
+            <div class="status">Статус: ищет хозяина</div>
+          </div>
+        </div>
+        <div class="full_desc">
+          <p>Обожает детей и маленьких собачек. Вторых предпочитает на завтрак... Шутка)</p>
+        </div>
+      </div>
+      <div class="card black">
+        <div class="picture">
+          <img src="images/Staffie10.jpg" alt="staffie">
+        </div>
+        <div class="info">
+          <div class="name">
+            <a href="">Жора</a>
+          </div>
+          <div class="short_desc">
+            <p>Возраст: 2.5 года</p>
+            <p>Окрас: черный</p>
+            <p>Болезни: нет</p>
+            <div class="status">Статус: ищет хозяина</div>
+          </div>
+        </div>
+
+        <div class="full_desc">
+          <p>Мини версия медвежонка</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="contacts">
+        Напишите нам:
+        <div class="mail">
+          <a href="">staffie@babuli.ru</a>
+        </div>
+        или
+        <div class="mail">
+          <a href="">vnucha@babuli.ru</a>
+        </div>
+      </div>
+      <div class="organization">
+        ООО "<a href="">Стафы от бабуси</a>"
+      </div>
+    </footer>
+  </body>
+</html>

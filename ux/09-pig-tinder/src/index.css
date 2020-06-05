@@ -1,0 +1,142 @@
+#card-2 {
+  display: none;
+}
+#card-3 {
+  display: none;
+}
+#card-4 {
+  display: none;
+}
+#card-5 {
+  display: none;
+}
+body {
+  margin: 0;
+}
+.header {
+  display: flex;
+
+  width: 100%;
+  height: 50px;
+
+  background-color: #393939;
+}
+.title {
+  margin: auto;
+
+  color: white;
+  font-size: 30px;
+}
+.center {
+  display: flex;
+}
+.card {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+
+  width: 80vw;
+  min-height: 200px;
+  margin: 20px auto auto;
+
+  border: solid gray 2px;
+  border-radius: 15px;
+
+  box-shadow: 0 0 10px gray;
+}
+.card__img {
+  display: flex;
+
+  width: 80vw;
+  height: 80vw;
+}
+.card__img img {
+  width: 100%;
+
+  object-fit: cover;
+}
+.info {
+  height: 30%;
+  padding: 10px;
+}
+.name {
+  margin: 0;
+
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.button-menu {
+  display: flex;
+  justify-content: space-around;
+
+  width: 70%;
+  margin: 30px auto auto;
+}
+.button {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+
+  border: none;
+
+  transition-duration: 0.5s;
+
+  background: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  outline: none;
+}
+.button:hover {
+  transform: scale(1.3);
+}
+.button__dislike {
+  background-image: url('icons/dislike.svg');
+}
+.button__like {
+  background-image: url('icons/like.svg');
+}
+.button__superlike {
+  background-image: url('icons/star.svg');
+}
+
+@keyframes swipe-up {
+  to {
+    transform: translateY(-100%);
+
+    opacity: 0;
+  }
+}
+.card__swipe-up-animation {
+  animation: normal 1s ease-out swipe-up;
+}
+@keyframes swipe-left {
+  to {
+    transform: translateX(-100%);
+
+    opacity: 0;
+  }
+}
+.card__swipe-left-animation {
+  animation: normal 1s ease-out swipe-left;
+}
+@keyframes swipe-right {
+  to {
+    transform: translateX(100%);
+
+    opacity: 0;
+  }
+}
+.card__swipe-right-animation {
+  animation: normal 1s ease-out swipe-right;
+}
+@media (min-width: 500px) {
+  .card {
+    width: 400px;
+    height: 500px;
+  }
+  .card__img {
+    width: 400px;
+    height: 400px;
+  }
+}
